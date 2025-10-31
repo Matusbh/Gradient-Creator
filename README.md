@@ -11,7 +11,7 @@ Desarrollado con **HTML, SCSS y JavaScript** puro, utilizando **Vite** como herr
 
 ---
 
-## 🌐 Ver página en vivo
+## 🌐 Ver demo
 
 👉 [Haz clic aquí para ver la landing page](https://matusbh.github.io/Gradient-Creator/)
 
@@ -103,13 +103,6 @@ Abre en el navegador http://localhost:5500.
 - El manejo de **JavaScrip**t modular con import/export.
 - El trabajo con eventos **DOM** y manipulación de estilos en tiempo real.
 - La estructuración de un proyecto listo para publicación en **GitHub Pages**.
-
----
-
-## 🌐 Demo
-
-**- 🔗 Ver demo en GitHub Pages**
-(añade el enlace cuando lo publiques)
 
 ---
 
