@@ -52,47 +52,48 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
    git clone https://github.com/Matusbh/Gradient-Creator.git
    cd Gradient-Creator
 
-   Abre el proyecto en VS Code y ejecuta con Live Server:
+Abre el proyecto en VS Code y ejecuta con Live Server:
 
-    index.html
+ ```bash
+   index.html
 
-  o en terminal:
+o en terminal:
+   ```bash
+   npx serve
 
-npx serve
-
-
-Compila SCSS a CSS (si editas estilos):
-
-Con extensión Live Sass Compiler, o
-
+Compila SCSS a CSS 
 Desde terminal:
-
-npm run sass
-
+   ```bash
+   npm run sass
 
 Abre en el navegador http://localhost:5500.
 
-🧠 Aprendizajes y objetivos
+---
 
-Este proyecto fue creado como práctica para reforzar:
+## 🧠 Aprendizajes y objetivos
 
-El uso de SCSS modular y buenas prácticas de organización de estilos.
+-Este proyecto fue creado como práctica para reforzar:
+-El uso de SCSS modular y buenas prácticas de organización de estilos.
+-El manejo de JavaScript modular con import/export.
+-El trabajo con eventos DOM y manipulación de estilos en tiempo real.
+-La estructuración de un proyecto listo para publicación en GitHub Pages.
 
-El manejo de JavaScript modular con import/export.
+---
 
-El trabajo con eventos DOM y manipulación de estilos en tiempo real.
+##🌐 Demo
 
-La estructuración de un proyecto listo para publicación en GitHub Pages.
-
-🌐 Demo
-
-🔗 Ver demo en GitHub Pages
-
+** -🔗 Ver demo en GitHub Pages **
 (añade el enlace cuando lo publiques)
 
-🧑‍💻 Autor
+---
+
+##🧑‍💻 Autor
 
 Matus Behun
 📍 Tenerife, España
 Desarrollador Frontend | @MatDevs
+
+
+
+
 
