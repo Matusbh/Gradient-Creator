@@ -41,21 +41,29 @@ Desarrollado con **HTML, SCSS y JavaScript** puro, utilizando **Vite** como herr
 ## 📁 Estructura del proyecto
 ```bash
 /
-├── index.html
+/ (raíz)
 ├── 3-colors.html
-├── /css
-│ └── style.css
-├── /sass
-│ ├── _header.scss
-│ ├── _default.scss
-│ └── main.scss
-├── /src
-│ ├── main.js
-│ └── /components
-│ └── GradientGenerator.js
-├── /img
-│ └── logo.png
-└── .gitignore
+├── Contacto.html
+├── index.html
+├── Info.html
+│
+├── css/
+│   └── style.css
+│
+├── img/
+│   
+├── sass/                      
+│   └── style.scss
+│
+├── src/
+│   ├── main.js
+│   └── components/
+│       └── GradientGenerator.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
 ---
