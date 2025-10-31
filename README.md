@@ -5,6 +5,18 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 
 ---
 
+## 📸 Captura del proyecto
+
+![Vista principal](./Captura%20de%20la%20pagina.PNG)
+
+---
+
+## 🌐 Ver página en vivo
+
+👉 [Haz clic aquí para ver la landing page](https://matusbh.github.io/CSS-Tarea-entregable-2-Header-Gathsession/)
+
+---
+
 ## 🚀 Características
 
 - Generador de gradientes **de 2 y 3 colores**.  
@@ -21,7 +33,6 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 - **HTML5** → estructura y semántica.  
 - **SCSS (Sass)** → estilos modulares y variables reutilizables.  
 - **JavaScript (ES Modules)** → lógica de generación y actualización dinámica del gradiente.  
-- **Live Sass Compiler / npm-sass** → compilación SCSS → CSS.  
 
 ---
 
