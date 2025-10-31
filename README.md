@@ -88,7 +88,7 @@ Abre en el navegador http://localhost:5500.
 
 ## 🌐 Demo
 
-**-🔗 Ver demo en GitHub Pages**
+**- 🔗 Ver demo en GitHub Pages**
 (añade el enlace cuando lo publiques)
 
 ---
