@@ -7,7 +7,7 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 
 ## 📸 Captura del proyecto
 
-![Vista principal](./Captura%20de%20la%20pagina.PNG)
+![Vista previa del proyecto](./img/Vista-previa-bien.webp)
 
 ---
 
