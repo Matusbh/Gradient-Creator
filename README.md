@@ -26,6 +26,7 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 ---
 
 ## 📁 Estructura del proyecto
+```bash
 /
 ├── index.html
 ├── 3-colors.html
@@ -42,6 +43,7 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 ├── /img
 │ └── logo.png
 └── .gitignore
+```
 
 ---
 
@@ -77,10 +79,10 @@ Abre en el navegador http://localhost:5500.
 ## 🧠 Aprendizajes y objetivos
 
 **Este proyecto fue creado como práctica para reforzar:**
--El uso de **SCSS modular** y buenas prácticas de organización de estilos.
--El manejo de **JavaScrip**t modular con import/export.
--El trabajo con eventos **DOM** y manipulación de estilos en tiempo real.
--La estructuración de un proyecto listo para publicación en **GitHub Pages**.
+- El uso de **SCSS modular** y buenas prácticas de organización de estilos.
+- El manejo de **JavaScrip**t modular con import/export.
+- El trabajo con eventos **DOM** y manipulación de estilos en tiempo real.
+- La estructuración de un proyecto listo para publicación en **GitHub Pages**.
 
 ---
 
