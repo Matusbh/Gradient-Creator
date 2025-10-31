@@ -95,8 +95,8 @@ Abre en el navegador http://localhost:5500.
 
 ## 🧑‍💻 Autor
 
-Matus Behun
-📍 Tenerife, España
+- Matus Behun
+- 📍 Tenerife, España
 Desarrollador Frontend | **@MatDevs**
 
 
