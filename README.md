@@ -71,10 +71,10 @@ Desarrollado con **HTML, SCSS y JavaScript** puro, utilizando **Vite** como herr
 ## ⚙️ Cómo ejecutarlo
 
 1. **Clona el repositorio:**
-   ```bash
+```bash
    git clone https://github.com/Matusbh/Gradient-Creator.git
    cd Gradient-Creator
-   ```
+ ```
 
 Abre el proyecto en VS Code y ejecuta con Live Server:
 
@@ -87,8 +87,7 @@ o en terminal:
    npx serve
 ```
 
-Compila SCSS a CSS 
-Desde terminal:
+Compila SCSS a CSS desde terminal:
 ```bash
    npm run sass
 ```
