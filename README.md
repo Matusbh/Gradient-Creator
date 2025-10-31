@@ -1,7 +1,7 @@
 # 🎨 CSS Gradient Generator | MatDevs
 
-Aplicación web interactiva que permite **crear gradientes CSS personalizados** de dos o tres colores, visualizar el resultado en tiempo real y copiar el código generado fácilmente.  
-Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías externas.
+Aplicación web interactiva que permite crear **gradientes CSS personalizados** de dos o tres colores, visualizar el resultado en tiempo real y copiar el código generado fácilmente.
+Desarrollado con **HTML, SCSS y JavaScript** puro, utilizando **Vite** como herramienta de desarrollo para la organización y compilación del proyecto.
 
 ---
 
@@ -13,7 +13,7 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 
 ## 🌐 Ver página en vivo
 
-👉 [Haz clic aquí para ver la landing page](https://matusbh.github.io/CSS-Tarea-entregable-2-Header-Gathsession/)
+👉 [Haz clic aquí para ver la landing page](https://matusbh.github.io/Gradient-Creator/)
 
 ---
 
@@ -32,7 +32,9 @@ Desarrollado con **HTML, SCSS y JavaScript puro**, sin frameworks ni librerías 
 
 - **HTML5** → estructura y semántica.  
 - **SCSS (Sass)** → estilos modulares y variables reutilizables.  
-- **JavaScript (ES Modules)** → lógica de generación y actualización dinámica del gradiente.  
+- **JavaScript (ES Modules)** → lógica de generación y actualización dinámica del gradiente.
+- **Vite** → para servir y compilar el proyecto.  
+-  **SASS** → preprocesador CSS utilizado para modularizar los estilos.
 
 ---
 
