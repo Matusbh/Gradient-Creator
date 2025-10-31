@@ -1,0 +1,131 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as var;
+
+.hero {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(4, 150px);
+  gap: 20px;
+  justify-content: center;
+}
+
+/// Revisar diseños para la pagina (COlores)
+// Idea: the ugliest gradient creator page
+
+.controles {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  h1 {
+    @include m.tittle();
+    padding: 20px;
+    text-align: center;
+  }
+  .elegir-direccion {
+    margin-bottom: 20px;
+  }
+  .directions ul {
+    @include m.reser-list();
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+    .arriba {
+      transform: rotate(-90deg);
+    }
+    .arriba-derecha {
+      transform: rotate(-45deg);
+    }
+    .abajo-derecha {
+      transform: rotate(45deg);
+    }
+    .abajo {
+      transform: rotate(90deg);
+    }
+    .abajo-izq {
+      transform: rotate(135deg);
+    }
+    .izq {
+      transform: rotate(180deg);
+    }
+    .arriba-izq {
+      transform: rotate(225deg);
+    }
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    &:hover {
+      background-color: #fcb53b;
+      border-radius: 50px;
+    }
+  }
+  h3 {
+    @include m.sub-tittle();
+    margin-top: 20px;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .botones {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .circulo {
+    list-style: none;
+  }
+}
+
+.preview {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+
+  h3 {
+    @include m.sub-tittle();
+    text-align: center;
+    margin-top: 20px;
+  }
+  #gradientPreview {
+    display: flex;
+    justify-content: center;
+    width: max;
+    height: 200px;
+    border: 2px solid var.$black;
+    border-radius: 20px;
+    transform: translateY(20px);
+    background: linear-gradient(45deg, #b45253, #84994f);
+  }
+}
+
+.code {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 3;
+
+  h3 {
+    @include m.sub-tittle();
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  #cssCode {
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    border-left: 5px solid #fff;
+    background-color: rgba(189, 189, 189, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+  }
+}

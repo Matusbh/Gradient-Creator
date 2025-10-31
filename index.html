@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Gradient Generator | MatDevs</title>
+    <meta
+      name="description"
+      content="Create linear and radial CSS gradients instantly. Pick direction and colors, preview, and copy the code. Free tool by MatDevs."
+    />
+
+    <!-- SEO: canonical (TODO: replace with your absolute domain) -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/index.html" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CSS Gradient Generator | MatDevs" />
+    <meta
+      property="og:description"
+      content="Create linear and radial CSS gradients instantly. Choose direction and colors, preview, and copy the code."
+    />
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/index.html" />
+    <meta
+      property="og:image"
+      content="https://YOUR-DOMAIN.com/img/MatDevs.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="./img/MatDevs.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <figure>
+          <a href="https://github.com/Matusbh" aria-label="MatDevs GitHub">
+            <img
+              src="./img/MatDevs.png"
+              width="150"
+              height="75"
+              alt="MatDevs logo"
+              class="logo-matdevs"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </a>
+        </figure>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="./index.html">Generator</a></li>
+            <li><a href="./3-colors.html">3-color gradient</a></li>
+            <li><a href="./Info.html">Information</a></li>
+            <li><a href="./Contacto.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="controles">
+          <h1>CSS Gradient Generator</h1>
+          <h3 class="elegir-direccion">Choose direction</h3>
+
+          <div class="directions" id="directions">
+            <ul>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to top"
+                  class="arriba"
+                  data-kind="linear"
+                  data-dir="to top"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to top right"
+                  class="arriba-derecha"
+                  data-kind="linear"
+                  data-dir="to top right"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to right"
+                  class="derecha"
+                  data-kind="linear"
+                  data-dir="to right"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to bottom right"
+                  class="abajo-derecha"
+                  data-kind="linear"
+                  data-dir="to bottom right"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+            <ul class="segundo">
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to bottom"
+                  class="abajo"
+                  data-kind="linear"
+                  data-dir="to bottom"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to bottom left"
+                  class="abajo-izq"
+                  data-kind="linear"
+                  data-dir="to bottom left"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to left"
+                  class="izq"
+                  data-kind="linear"
+                  data-dir="to left"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/flecha.svg"
+                  alt="Apply gradient to top left"
+                  class="arriba-izq"
+                  data-kind="linear"
+                  data-dir="to top left"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
+          <ul class="circulo">
+            <li>
+              <img
+                src="./img/circular.svg"
+                alt="Apply radial gradient"
+                id="circular"
+                data-kind="radial"
+                data-shape="circle"
+                data-at="center"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+
+          <div class="colores">
+            <h3>Choose colors</h3>
+            <div class="botones">
+              <div class="color-input-group">
+                <input
+                  type="color"
+                  id="color1"
+                  class="color-picker"
+                  value="#84994F"
+                />
+                <div
+                  class="color-display"
+                  id="color-display"
+                  data-color="#84994F"
+                  style="--color-value: #84994f"
+                  aria-label="Preview color 1"
+                ></div>
+                <input
+                  type="text"
+                  id="color1-code"
+                  class="color-code"
+                  placeholder="#84994F"
+                  value="#84994F"
+                  maxlength="7"
+                  inputmode="text"
+                  autocomplete="off"
+                  spellcheck="false"
+                  aria-label="Color 1 code (HEX)"
+                  pattern="^#(?:[0-9a-fA-F]{3}){1,2}$"
+                  data-picker="#color1"
+                  data-display="#color-display"
+                />
+              </div>
+
+              <div class="color-input-group">
+                <input
+                  type="color"
+                  id="color2"
+                  class="color-picker"
+                  value="#B45253"
+                />
+                <div
+                  class="color-display"
+                  id="color-display-2"
+                  data-color="#B45253"
+                  style="--color-value: #b45253"
+                  aria-label="Preview color 2"
+                ></div>
+                <input
+                  type="text"
+                  id="color2-code"
+                  class="color-code"
+                  placeholder="#B45253"
+                  value="#B45253"
+                  maxlength="7"
+                  inputmode="text"
+                  autocomplete="off"
+                  spellcheck="false"
+                  aria-label="Color 2 code (HEX)"
+                  pattern="^#(?:[0-9a-fA-F]{3}){1,2}$"
+                  data-picker="#color2"
+                  data-display="#color-display-2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="generate">
+            <button aria-label="Generate gradient">Generate</button>
+          </div>
+        </div>
+
+        <div class="preview">
+          <h3>Preview zone</h3>
+          <div
+            class="gradient-preview"
+            id="gradientPreview"
+            aria-live="polite"
+          ></div>
+        </div>
+        <div class="code">
+          <h3>CSS code</h3>
+          <p class="css-code" id="cssCode">
+            The generated gradient CSS will appear here for you to copy.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

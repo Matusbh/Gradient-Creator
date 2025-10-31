@@ -1,0 +1,44 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as var;
+
+header {
+  .container {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-matdevs {
+      height: 80px;
+      width: 160px;
+      border-radius: 5%;
+    }
+    nav ul {
+      @include m.reser-list();
+      display: flex;
+      gap: 30px;
+      li a {
+        @include m.sub-tittle();
+        font-size: 20px;
+        text-decoration: none;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          height: 4px;
+          background-color: #84994f;
+          transform: scaleX(0); // la barra empieza oculta
+          transform-origin: center;
+          transition: transform 0.3s ease;
+        }
+        &:hover::after {
+          transform: scaleX(1); // se expande hacia la derecha
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.color-input-group {
+  position: relative;
+  width: 160px;
+  height: 70px;
+}
+
+.color-picker {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: default;
+}
+
+.color-display {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.generate button {
+  display: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.color-code {
+  margin-top: 10px;
+  width: 160px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #b45253;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header .container {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo-matdevs {
+  height: 80px;
+  width: 160px;
+  border-radius: 5%;
+}
+header .container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+header .container nav ul li a {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #b45253;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+header .container nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background-color: #84994f;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+header .container nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hero {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(4, 150px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.controles {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-column: span 2/span 2;
+  grid-row: span 4/span 4;
+}
+.controles h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 51px;
+  color: #84994f;
+  padding: 20px;
+  text-align: center;
+}
+.controles .elegir-direccion {
+  margin-bottom: 20px;
+}
+.controles .directions ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.controles .directions ul .arriba {
+  transform: rotate(-90deg);
+}
+.controles .directions ul .arriba-derecha {
+  transform: rotate(-45deg);
+}
+.controles .directions ul .abajo-derecha {
+  transform: rotate(45deg);
+}
+.controles .directions ul .abajo {
+  transform: rotate(90deg);
+}
+.controles .directions ul .abajo-izq {
+  transform: rotate(135deg);
+}
+.controles .directions ul .izq {
+  transform: rotate(180deg);
+}
+.controles .directions ul .arriba-izq {
+  transform: rotate(225deg);
+}
+.controles img {
+  height: 50px;
+  width: 50px;
+}
+.controles img:hover {
+  background-color: #fcb53b;
+  border-radius: 50px;
+}
+.controles h3 {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #b45253;
+  margin-top: 20px;
+  font-size: 34px;
+  text-align: center;
+}
+.controles .botones {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.controles .circulo {
+  list-style: none;
+}
+
+.preview {
+  grid-column: span 2/span 2;
+  grid-row: span 2/span 2;
+  grid-column-start: 3;
+}
+.preview h3 {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #b45253;
+  text-align: center;
+  margin-top: 20px;
+}
+.preview #gradientPreview {
+  display: flex;
+  justify-content: center;
+  width: max;
+  height: 200px;
+  border: 2px solid #151515;
+  border-radius: 20px;
+  transform: translateY(20px);
+  background: linear-gradient(45deg, #b45253, #84994f);
+}
+
+.code {
+  grid-column: span 2/span 2;
+  grid-row: span 2/span 2;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.code h3 {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #b45253;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.code #cssCode {
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  border-left: 5px solid #fff;
+  background-color: rgba(189, 189, 189, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero-container-info {
+  text-align: center;
+  justify-content: center;
+}
+.hero-container-info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 51px;
+  color: #84994f;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.hero-container-info h2 {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #b45253;
+  font-size: 28px;
+  margin: 20px;
+  padding-top: 10px;
+}
+.hero-container-info p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #b45253;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.relleno {
+  height: 100px;
+}
+
+.hero-contacto {
+  text-align: center;
+}
+.hero-contacto h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 51px;
+  color: #84994f;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.hero-contacto p {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #b45253;
+  margin-bottom: 30px;
+}
+
+.rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.rrss a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #b45253;
+}
+.rrss .gmail-logo,
+.rrss .x-logo {
+  width: 30px;
+  height: auto;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin-left: 100px;
+  margin-right: 100px;
+}/*# sourceMappingURL=style.css.map */

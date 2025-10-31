@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as var;
+
+.hero-container-info {
+  text-align: center;
+  justify-content: center;
+  h1 {
+    @include m.tittle();
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  h2 {
+    @include m.sub-tittle();
+    font-size: 28px;
+    margin: 20px;
+    padding-top: 10px;
+  }
+  p {
+    @include m.body();
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+.relleno {
+  height: 100px;
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+
+.color-input-group {
+  position: relative;
+  width: 160px;
+  height: 70px;
+}
+
+.color-picker {
+  position: absolute;
+  inset: 0; // top:0; right:0; bottom:0; left:0
+  width: 100%;
+  height: 100%;
+  opacity: 0; // invisible pero clicable
+  cursor: default;
+}
+
+.color-display {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.generate button {
+  display: none;
+  @include m.button();
+}
+
+.color-code {
+  margin-top: 10px;
+  width: 160px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  @include m.body();
+  font-weight: bold;
+  font-size: 24px;
+}

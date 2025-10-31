@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as var;
+
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+body {
+  font-family: var.$body-font;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin-left: 100px;
+  margin-right: 100px;
+}
